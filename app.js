@@ -1,14 +1,10 @@
-// lesson 4
+// lesson 6
 
-var wmf = document.querySelector('#book-list li:nth-child(2) .name');
-console.log(wmf);
+var banner = document.querySelector('#page-benner');
 
-var books = document.querySelector('#book-list li .name');
-console.log(books);
+console.log('#page-banner node type is:', banner.nodeType);
+console.log('#page-banner node type is:', banner.nodeName);
+console.log('page-banner has child nodes:', banner.hasChildNodes());
 
-books = document.querySelectorAll('#book-list li .name');
-console.log(books);
-
-Array.from(books).forEach(function(book){
-  console.log(book);
-});
+var clonedBanner = banner.cloneNode(true);
+console.log(clonedBanner);
