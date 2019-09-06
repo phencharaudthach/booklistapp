@@ -1,6 +1,10 @@
-// lesson 2
+// lesson 3
 
-var search = document.getElementById('search-books');
-var bookList = document.getElementById('book-list');
+var titles = document.getElementsByClassName('title');
 
-console.log(search, bookList);
+console.log(Array.isArray(titles));
+console.log(Array.isArray(Array.from(titles)));
+
+Array.from(titles).forEach(function(title){
+  console.log(title);
+});
