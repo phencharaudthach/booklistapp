@@ -43,7 +43,21 @@
             <input type="text" placeholder="Add a book..." />
             <button>Add</button>
         </form>
+        <div id="tabbed-content">
+            <ul class="tabs">
+                <li data-target="#about" class="active">About</li>
+                <li data-target="contact">Contact</li>
+            </ul>
+        <div class="panel active"  id="about">
+            <p>Content for about tab...</p>
+            <p>This is the best book app ever!</p>
+        </div>
+        <div class="panel" if="contact">
+            <p>Content for contact tab</p>
+            <p>You can contact me by calling 401-111-1111 or emailing booksarecool@book.com</p>
+        </div>
     </div>
+</div>
     <script src="app.js"></script>
 </body>
 </html>
