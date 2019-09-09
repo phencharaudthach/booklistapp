@@ -1,10 +1,23 @@
-// lesson 6
+// lesson 7
 
-var banner = document.querySelector('#page-benner');
+var bookList = document.querySelector('#book-list');
 
-console.log('#page-banner node type is:', banner.nodeType);
-console.log('#page-banner node type is:', banner.nodeName);
-console.log('page-banner has child nodes:', banner.hasChildNodes());
+console.log('book list parent element:', bookList.parentElement);
+console.log('book list parent node:', bookList.parentNode);
 
-var clonedBanner = banner.cloneNode(true);
-console.log(clonedBanner);
+console.log('all node children:');
+Array.from(bookList.childNodes).forEach(function(node){
+  console.log(node);
+});
+
+console.log('all element children:');
+Array.from(bookList.children).forEach(function(node){
+  console.log(node);
+});
+
+var titles = bookList.querySelectorAll('.name');
+
+console.log('Book titles:');
+Array.from(titles).forEach(function(title){
+  console.log(title.textContent);
+});
