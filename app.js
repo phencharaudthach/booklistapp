@@ -1,4 +1,4 @@
-// lesson 13
+// lesson 15
 
 const list = document.querySelector('#book-list ul');
 const forms = document.forms;
@@ -35,4 +35,14 @@ li.appendChild(bookName);
 li.appendChild(deleteBtn);
 list.appendChild(li);
 //list.insertBefore(li, list.querySelector('li:first-child'));
+});
+
+// hide books
+const hideBox = document.querySelector('#hide');
+hideBox.addEventListener('change',function(e){
+    if(hideBox.checked){
+        list.getElementsByClassName.display = "none";
+    } else {
+        list.getElementsByClassName.display = 'initial';
+    }
 });
