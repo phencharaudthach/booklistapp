@@ -1,12 +1,12 @@
-// lesson 12
+// lesson 13
 
-var list = document.querySelector('#book-list ul');
-var forms = document.forms;
+const list = document.querySelector('#book-list ul');
+const forms = document.forms;
 
 //delete books
 list.addEventListener('click', (e) => {
     if(e.target.className == 'delete'){
-        var li = e.target.parentElement;
+        const li = e.target.parentElement;
         li.parentNode.removeChild(li);
     }
 });
@@ -22,9 +22,13 @@ const li = document.createElement('li');
 const bookName = document.createElement('span');
 const deleteBtn = document.createElement('span');
 
-// add content
+// add text content
 bookName.textContent = value;
 deleteBtn.textContent = 'delete'
+
+//add classes
+bookName.textContent = value;
+deleteBtn.textContent = 'delete';
 
 //append to DOM
 li.appendChild(bookName);
