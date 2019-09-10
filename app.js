@@ -14,7 +14,7 @@ list.addEventListener('click', (e) => {
 });
 
 // add books
-const addForm = Forms['add-book'];
+const addForm = forms['add-book'];
 addForm.addEventListener('submit', function(e){
     e.preventDefault();
 
@@ -29,8 +29,8 @@ bookName.textContent = value;
 deleteBtn.textContent = 'delete'
 
 //add classes
-bookName.textContent = value;
-deleteBtn.textContent = 'delete';
+bookName.classList.add('name');
+deleteBtn.classList.add('delete');
 
 //append to DOM
 li.appendChild(bookName);
@@ -43,9 +43,9 @@ list.appendChild(li);
 const hideBox = document.querySelector('#hide');
 hideBox.addEventListener('change',function(e){
     if(hideBox.checked){
-        list.getElementsByClassName.display = "none";
+        list.style.display = "none";
     } else {
-        list.getElementsByClassName.display = 'initial';
+        list.style.display = 'initial';
     }
 });
 
